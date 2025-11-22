@@ -1,0 +1,351 @@
+/* -------------------------------------------------------------------------- *
+ * STYLE SETTINGS                                                             *
+ *                                                                            *
+ * AUTHOR OF THIS FILE: SIMON EUCHNER                                         *
+ * -------------------------------------------------------------------------- */
+
+/* --- VARIABLES ------------------------------------------------------------ */
+
+:root
+{
+    /* PRIMARY COLOURS */
+    --primary-color: midnightBlue;
+    --primary-text-color: white;
+    --primary-hover-color: blue;
+    --primary-active-color: red;
+
+    /* SECONDARY COLOURS */
+    --secondary-color: lightGray;
+    --secondary-text-color: black;
+
+    /* LENGTH */
+    --distance: 1em;
+    --distance-half: 0.5em;
+    --negative-distance: -1em;
+    --footer-margin: 0.3em;
+}
+
+/* --- END VARIABLES -------------------------------------------------------- */
+
+
+
+/* --- CLASSES -------------------------------------------------------------- */
+
+/* CLASS: MAIN MARGIN FOR PAGE */
+.pageMargin
+{
+    margin: var(--distance);
+}
+
+/* CLASS: CENTRED TEXT */
+.center
+{
+    /* TEXT */
+    text-align: center;
+}
+
+/* CLASS: SANS-SERIF TEXT */
+.sans
+{
+    /* TEXT */
+    font-family: sans-serif;
+}
+
+/* CLASS: PRIMARY COLOURS */
+.primary
+{
+    /* COLOURS */
+    background-color: var(--primary-color, midnightBlue);
+    color: var(--primary-text-color, white);
+}
+
+/* CLASS: SECONDARY COLOURS */
+.secondary
+{
+    /* COLOURS */
+    background-color: var(--secondary-color, lightGray);
+    color: var(--secondary-text-color, black);
+}
+
+/* CLASS: FOOTER TEXT */
+.footerText
+{
+    /* TEXT */
+    font-size: small;
+
+    /* LAYOUT */
+    margin: var(--footer-margin, 0.3em);
+}
+
+/* CLASSES: LIST OF GITHUB REPOSITORIES */
+.GitHubRepository
+{
+    /* LAYOUT */
+    margin-top: var(--distance, 1em);
+    padding: var(--distance, 1em);
+
+    /* BORDER */
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "img"
+                         "txt"
+                         "dwn";
+    grid-column-gap: var(--distance, 1em);
+    grid-row-gap: var(--distance, 1em);
+}
+.GitHubRepositoryTitle
+{
+    /* FONT */
+    font-size: large;
+
+    /* GRID */
+    grid-area: txt;
+}
+.GitHubRepositoryImage
+{
+    /* LAYOUT */
+    width: 50%;
+    height: auto;
+
+    /* GRID */
+    grid-area: img;
+}
+.GitHubRepositoryDownload
+{
+    /* LAYOUT */
+    margin-bottom: var(--negative-distance, -1em);
+
+    /* TEXT */
+    font-weight: bold;
+
+    /* GRID */
+    grid-area: dwn;
+}
+
+/* CLASS: APPLYING 'FLEX GROW' */
+.flexGrow
+{
+    /* LAYOUT */
+    flex-grow: 1;
+}
+
+/* CLASS: BUTTON TO GET BACH TO MAIN PAGE */
+.homeButton
+{
+    /* LAYOUT */
+    padding-left: var(--distance-half, 0.5em);
+    padding-right: var(--distance-half, 0.5em);
+}
+
+/* CLASSES: CONTACT INFORMATION */
+.contact
+{
+    /* LAYOUT */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.contactImage
+{
+    /* LAYOUT */
+    width: 8em;
+    margin-right: var(--distance, 1em);
+}
+.contactAddress
+{
+}
+
+/* CLASS: RED FRAME FOR HIGHLIGHTING */
+.important
+{
+    /* BORDER */
+    border: 5px;
+    border-color: red;
+    border-style: solid;
+
+    /* LAYOUT */
+    margin-top: var(--distance, 1em);
+    margin-bottom: var(--distance, 1em);
+    padding-left: var(--distance, 1em);
+    padding-right: var(--distance, 1em);
+    padding-top: var(--negative-distance, -1em);
+}
+
+/* --- END CLASSES ---------------------------------------------------------- */
+
+
+
+/* --- IDS ------------------------------------------------------------------ */
+
+/* --- END IDS -------------------------------------------------------------- */
+
+
+
+/* --- GENERAL STYLING ------------------------------------------------------ */
+
+/* STYLE FOR HEADER */
+header
+{
+    /* GRID */
+    grid-area: h;
+}
+
+/* STYLE FOR NAVIGATION */
+nav
+{
+    /* LAYOUT */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* GRID */
+    grid-area: n;
+}
+
+/* STYLE FOR BODY */
+body
+{
+    /* LAYOUT */
+    margin: 0;
+
+    /* GRID FOR MOBILE DEVICES */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "h h h h"
+                         "n n n n"
+                         "m m m m"
+                         "a a a a"
+                         "f f f f";
+}
+
+/* STYLE FOR MAIN */
+main
+{
+    /* GRID */
+    grid-area: m;
+}
+
+/* STYLE FOR ASIDE */
+aside
+{
+    /* LAYOUT */
+    padding-left: var(--distance-half, 0.5em);
+    padding-right: var(--distance-half, 0.5em);
+
+    /* GRID */
+    grid-area: a;
+}
+
+/* STYLE FOR FOOTER */
+footer
+{
+    /* TEXT */
+    font-size: small;
+
+    /* GRID */
+    grid-area: f;
+}
+
+/* STYLE FOR HYPERLINKS */
+a:link
+{
+    /* TEXT */
+    color: var(--primary-color, midnightBlue);
+    text-decoration: none;
+}
+a:hover
+{
+    /* TEXT */
+    color: var(--primary-hover-color, blue);
+    text-decoration: none;
+}
+a:active
+{
+    /* TEXT */
+    color: var(--primary-active-color, red);
+    text-decoration: none;
+}
+
+/* BUTTONS */
+button
+{
+    /* TEXT */
+    font-size: large;
+    font-weight: bold;
+
+    /* LAYOUT */
+    margin: var(--distance-half, 0.5em);
+    padding: 0.2em;
+    border: none;
+}
+button:hover
+{
+    /* COLOURS */
+    background-color: var(--primary-hover-color, blue);
+    color: var(--primary-text-color, white);
+
+    /* CURSOR */
+    cursor: pointer;
+}
+button:active
+{
+    /* COLOURS */
+    background-color: var(--primary-active-color, red);
+    color: var(--primary-text-color, white);
+
+    /* CURSOR */
+    cursor: pointer;
+}
+
+/* RULES */
+hr
+{
+    /* COLOURS */
+    color: var(--primary-color, midnightBlue);
+}
+
+/* --- END GENERAL STYLING -------------------------------------------------- */
+
+
+
+/* --- RESPONSES ------------------------------------------------------------ */
+
+/* RESPOND TO DEVICE SPECIFICATIONS */
+@media (min-width: 40em)
+{
+    .GitHubRepository
+    {
+        /* GRID */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "img txt txt"
+                             "dwn dwn dwn";
+    }
+    .GitHubRepositoryImage
+    {
+        /* LAYOUT */
+        width: 100%;
+    }
+
+    body
+    {
+        /* GRID FOR LARGER DEVICES (LAPTOP, DESKTOP, ...) */
+        grid-template-areas: "h h h h"
+                             "n n n n"
+                             "m m m a"
+                             "f f f f";
+    }
+
+    aside
+    {
+        /* LAYOUT */
+        padding-left: var(--distance, 1em);
+        padding-right: var(--distance, 1em);
+    }
+}
+
+/* --- END RESPONDES -------------------------------------------------------- */

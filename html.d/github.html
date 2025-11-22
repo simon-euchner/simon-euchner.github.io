@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--
+    GITHUB REPOSITORIES
+
+    AUTHOR OF THIS FILE: SIMON EUCHNER
+-->
+
+<!-- HTML -->
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css.d/style.css">
+        <script src="../js.d/load_sources.js"></script> <!-- NO DEFER -->
+        <script src="../js.d/button_actions.js" defer></script>
+        <title>
+            GitHub repositories
+        </title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- LOAD EXTERNAL HTML SOURCES -->
+        <script>
+            loadHtmlSource("./aside_.html", "aside_");
+            loadHtmlSource("./footer_.html", "footer_");
+        </script>
+
+        <!-- HEADER -->
+        <header class="center sans primary">
+            <h2>
+                GitHub
+            </h2>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="secondary">
+            <button class="sans primary homeButton"
+                    onclick="switchPage('../index.html')">
+                Home
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <div class="pageMargin">
+                <h4 class="sans">
+                    Introduction
+                </h4>
+                <p>
+                    Here I give an overview over my projects on GitHub. I
+                    summarise each project&rsquo;s purpose in a few sentences.
+                    Moreover, I announce plans for new projects, as well as work
+                    planned on existing ones.
+                </p>
+
+                <!-- CALENDAR -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_calendar.png"
+                         alt="Image of the main view of the program calendar."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            calendar
+                        </b>
+                        <p>
+                            <i>
+                                A simple GTK-4 calendar inspired by an
+                                old-school paper one.
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            Modern-day digital calendars typically come with a
+                            plethora of features. This is of course great for
+                            people who like these kinds of things. However, I
+                            personally do not enjoy software with, in my
+                            opinion, unnessecary features. Therefore, I decided
+                            to write a simple GTK-4 calendar which does mostly
+                            what an old-shool paper calendar does: It allows
+                            one to add a (text-based [monospace]) note to a
+                            specific day and mark it. Apart from providing a
+                            general window, not associated to a specific day,
+                            to place notes in, and marking the current day,
+                            there is no more functionality.
+                        </p>
+                        <p>
+                            The calendar is completely written in C using GTK-4.
+                            There is no binary distribution of the software. The
+                            application should be build by the user dircetly.
+                            This allows maximal control and a very simple and
+                            direct way of customising the the calendar's
+                            appearance through one C source file. No weird
+                            configuration file formats and alike.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="https://github.com/simon-euchner/calendar/r
+eleases">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PYQUANT -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_PYQUANT.png"
+                         alt="A two-level system coupled to a bosonic mode."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            PYQUANT
+                        </b>
+                        <p>
+                            <i>
+                                A Python library for the classical simulation of
+                                quantum mechanical problems.
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            While working on my master&rsquo;s thesis in the it
+                            became clear to me that for the quick-and-dirty
+                            (basic) simulations I run on a daily basis I always
+                            need the same numerical quantities. Therefore I
+                            descided to write a small software library to avoid
+                            writing the same computer code over and over.
+                        </p>
+                        <p>
+                            To implement this library I decided to use the
+                            scipting language Python, since it offers an easy to
+                            use interface to well-tested and fast FORTRAN, etc.
+                            code. I definitly took concepts from
+                            <a href="https://qutip.org">
+                                QuTiP
+                            </a>, which I hereby reference.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="https://github.com/simon-euchner/PYQUANT">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SESP -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_SESP.png"
+                         alt="Typical output of a matrix printed with SESP."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            SESP
+                        </b>
+                        <p>
+                            <i>
+                                A simple sparse and dense matrix library in
+                                native C. The abbreviation <em>SESP</em> is
+                                short for <em>Simon Euchner&rsquo;s sparse
+                                matrix library</em> to avoid ambiguity with
+                                other sparse matrix libraries.
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            I was frustrated that using sparse matrices in C is
+                            somehwat convoluted, because one typically needs to
+                            install huge packages of software, e.g.,
+                            <a href="https://sparse.tamu.edu/">
+                                <em>SuiteSparse</em>
+                            </a>, which come with rather thin or no
+                            documentation.  In order to not install a lot of
+                            software I do not need just to obtain a basic sparse
+                            matrix library, I descided to code one up myself.
+                            The result is the present software.
+                        </p>
+                        <p>
+                            The library is mainly designed for useage directly
+                            in a C program, although I remark it is
+                            straight-forward to code up a
+                            <a href="https://www.python.org/">
+                                <em>Python</em>
+                            </a>,
+                            <a href="https://julialang.org/">
+                                <em>Julia</em>
+                            </a>, etc., interface. Of course, high-level
+                            languages, typically, already come with a sparse
+                            matrix library, such that I definitely view the main
+                            application area of the library to be directly in C.
+                        </p>
+                        <p>
+                            I focused on a simple design and only the most basic
+                            functionality. However, because of the
+                            library&rsquo;s simplicity it is straight-forward to
+                            add desired functionality as needed.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/SESP/relea
+ses">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LLIST -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_llist.png"
+                         alt="An image depicting the idea of a linked list."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            llist
+                        </b>
+                        <p>
+                            <i>
+                                A C library to work with linked lists.
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            I wanted a C library that allows me to work
+                            with linked lists, so I coded one up, and the present
+                            library is the result.
+                        </p>
+                        <p>
+                            It is simple, written in native C, and can be
+                            included in any C program via a single header
+                            file.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/llist/rele
+ases/">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WAYLANDCLIENTLOGO -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_waylandclientlogo.png"
+                         alt="Image of the Wayland logo."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            WaylandClientLogo
+                        </b>
+                        <p>
+                            <i>
+                                Educational implementation of a Wayland client.
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            When I first migrated my systems from the
+                            <a href="https://x.org/releases/X11R7.7/doc/xproto/x
+11protocol.html">
+                                <em>X Window System Protocol</em>
+                            </a>
+                            to the
+                            <a href="https://wayland.freedesktop.org/">
+                                <em>Wayland Protocol</em>
+                            </a>
+                            I was curious on how one writes Wayland clients.
+                            Therefore, in order to learn some basics, I coded up
+                            this simple example client.
+                        </p>
+                        <p>
+                            The program is <em>only</em> intended for
+                            educational purposes and should <em>not</em> be used
+                            in real-world applications.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/WaylandCli
+entLogo">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ZVODE -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_ZVODE.png"
+                         alt="A typical time series computed with ZVODE."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            ZVODE
+                        </b>
+                        <p>
+                            <i>
+                                C interface to
+                                <a href="https://netlib.org/">
+                                    <em>Netlib&rsquo;s</em>
+                                </a>
+                                double complex variable-coefficient
+                                ordinary-differential equation solver,
+                                <a href="https://netlib.org/ode/zvode.f">
+                                    zvode
+                                </a>.
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            One of the ordinary-differential equation solvers I
+                            typically use is the one stated above. However, I
+                            wanted the opportunity to call it from within a C
+                            program. Therefore I decided to write a simple C
+                            interface to the original FORTRAN code, such that I
+                            do not need to do it every time I need the
+                            integrator.
+                        </p>
+                        <p>
+                            The interface does <em>not</em> come with the full
+                            functionality the original code offers, but only
+                            the main functionality I tyically use.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/ZVODE/rele
+ases/">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside_" class="secondary"></aside>
+
+        <!-- FOOTER -->
+        <footer id="footer_" class="primary"></footer>
+
+    </body>
+
+</html>
+<!--- END -->

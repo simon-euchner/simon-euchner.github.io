@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    CONTACT INFORMATION
+
+    AUTHOR OF THIS FILE: SIMON EUCHNER
+-->
+
+<!-- HTML -->
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css.d/style.css">
+        <script src="../js.d/load_sources.js"></script> <!-- NO DEFER -->
+        <script src="../js.d/button_actions.js" defer></script>
+        <title>
+            Contact
+        </title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- LOAD EXTERNAL HTML SOURCES -->
+        <script>
+            loadHtmlSource("./aside_.html", "aside_");
+            loadHtmlSource("./footer_.html", "footer_");
+        </script>
+
+        <!-- HEADER -->
+        <header class="center sans primary">
+            <h2>
+                Contact
+            </h2>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="secondary">
+            <button class="sans primary homeButton"
+                    onclick="switchPage('../index.html')">
+                Home
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="pageMargin">
+                <h4 class="sans">
+                    Reasons one might want to get in touch
+                </h4>
+                <p>
+                    If you have questions, doubts, suggestions, etc., about any
+                    of my work, please do not hesitate to contact me via
+                    electronic mail. This also includes asking for permission to
+                    use content on this websit, or, more generally, any of my
+                    projects in some way that is prohibited by the applying
+                    license, e.g., you want to use part of my code to create
+                    proprietary software. In these cases I am postive a solution
+                    can be found.
+                </p>
+
+                <!-- CONTACT -->
+                <div class="contact">
+
+                    <img src="../images.d/image_portrait.png"
+                         alt="An (black and white) image of Simon Euchner."
+                         class="contactImage">
+
+                    <div class="contactAddress">
+                        <h4 class="sans">
+                            Electronic contact information
+                        </h4>
+                        <i>
+                            Simon Euchner<br>
+                            <a href="mailto:euchner*se@gmail.com">
+                                <code>
+                                    <b>euchner*se@gmail.com</b>
+                                </code>
+                            </a><br>
+                            Germany
+                        </i>
+                    </div>
+
+                </div>
+
+                <div class="important">
+                    <h4 class="sans">
+                        Important notice
+                    </h4>
+                    <p>
+                        If you are not a robot and want to contact me, please
+                        replace the asterisk, i.e., the &lsquo;star&rsquo;, in
+                        the electronic mail address with a full stop, i.e., a
+                        &lsquo;dot&rsquo;. This serves just as a
+                        simple-to-implement measure to protect myself against
+                        internet attacks.
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside_" class="secondary"></aside>
+
+        <!-- FOOTER -->
+        <footer id="footer_" class="primary"></footer>
+
+    </body>
+
+</html>
+<!--- END -->
