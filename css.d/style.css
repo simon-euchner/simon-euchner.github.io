@@ -158,6 +158,8 @@
 }
 .contactAddress
 {
+    /* LAYOUT */
+    margin-top: var(--negative-distance, -1em);
 }
 
 /* CLASS: RED FRAME FOR HIGHLIGHTING */
