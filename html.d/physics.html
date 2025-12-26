@@ -1,14 +1,274 @@
 <!DOCTYPE html>
-<h3>
-    Under construction ...
-</h3>
-<div>
-    <img src="../images.d/excavator.jpg" width=30%>
-</div>
-<p>
-    Image taken from
-    <a href="https://pixabay.com/photos/excavator-construction-site-vehicle-8009
-96/">
-        here
-    </a>.
-</p>
+<!--
+    PHYSICS
+
+    AUTHOR OF THIS FILE: SIMON EUCHNER
+-->
+
+<!-- HTML -->
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css.d/style.css">
+        <script src="../js.d/load_sources.js"></script> <!-- NO DEFER -->
+        <script src="../js.d/button_actions.js" defer></script>
+        <title>
+            Physics
+        </title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- LOAD EXTERNAL HTML SOURCES -->
+        <script>
+            loadHtmlSource("./aside_.html", "aside_");
+            loadHtmlSource("./footer_.html", "footer_");
+        </script>
+
+        <!-- HEADER -->
+        <header class="center sans primary">
+            <h2>
+                GitHub
+            </h2>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="secondary">
+            <button class="sans primary homeButton"
+                    onclick="switchPage('../index.html')">
+                Home
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="pageMargin">
+
+                <!-- Introduction -->
+                <h4 class="sans">
+                    Introduction
+                </h4>
+                <p>
+                    Here I reference my &lsquo;official&rsquo; work in
+                    theretical physics, linked to my physics studies as an
+                    undergraduate and graduate student. That is, my
+                    Bachelor&rsquo;s thesis, my Master&rsquo;s thesis, and
+                    puplications in journals.
+                    <br>
+                    <br>
+                    As can be seen by a physicists eye, I transitioned between
+                    fields &mdash; from Quantum field theory (QED and QCD) to
+                    atomic phyiscs and (analogue) quantum simulation. This
+                    (somewhat late) transition was due to the fact that for a
+                    long time I could not decide between these two fields I
+                    both enjoyed working on&mdash; of course, at least
+                    professionally, a desicion was required at some point.
+                </p>
+
+                <div class="important">
+                    <h3>
+                        Important notice
+                    </h3>
+                    <p>
+                        At the moment, the PDF-versions of the theses are not
+                        available. I first need to ask for clearance.
+                    </p>
+                </div>
+
+                <!-- BACHELOR'S THESIS-->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_calendar.png"
+                         alt="Image of the main view of the program calendar."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            Bachelor&rsquo;s thesis
+                        </b>
+                        <p>
+                            <i>
+                                Polarized DIS and
+                                Quark-Gluon-Quark-Contributions to the
+                                Wandzura-Wilczek-Relation
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            <i>Summary.</i>
+                            <br>
+                            <br>
+                            Since the first deep inelastic scattering (DIS)
+                            experiments in the late 1960&rsquo;s, differential
+                            scattering cross-sections (DSCSs) are measured.
+                            These quantities are expressed in terms of so-called
+                            structure functions. These structure functions,
+                            encoding information on the scattering processe, can
+                            thus be extracted experimentally from DSCS
+                            measurements. All of this is done without the
+                            knowledge about partons and the target&rsquo;s
+                            (e.g., proton&rsquo;s) internal structure. However,
+                            predictions for the DSCS can also be made based on
+                            quantum chromo dynamics (QCD). This leads to an
+                            expression for the DSCS in terms of so-called
+                            parton distributions, which are directly linked to
+                            QCD matrix elements. Combining both descriptions
+                            yields important relations between structure
+                            functions, which are found under the assumption that
+                            the parton picture is valid. The probably most
+                            prominent example for a relation between strcuture
+                            functions is the Callan-Gross relation, which is
+                            found in the unpolarised case. The relations
+                            between structure fucntions can be tested
+                            experimentally, therefore allowing tests of
+                            fundamental theoreies such as QCD, which describe
+                            the fundamental ofature of our universe.
+                            <br>
+                            <br>
+                            In this work we consider polarised DIS and focus on
+                            the well-known Wandzura-Wilczek relation. We derive
+                            the twist-3 contibutions which break this relation
+                            and express them in distributons resulting from
+                            quark-gluon-quark matrix elements. For these
+                            functions we test a physically motiovated model by
+                            fitting the free parameters to experimental data
+                            using the programming language FORmula TRANslator
+                            (FOTRAN).
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="">
+                                PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PYQUANT -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_PYQUANT.png"
+                         alt="A two-level system coupled to a bosonic mode."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            Master&rsquo;s thesis
+                        </b>
+                        <p>
+                            <i>
+                                Quantum Simulation of Molecular Dynamics in
+                                Rydberg Atom Arrays
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            <i>Abstract.</i>
+                            <br>
+                            <br>
+                            Rydberg atoms held in optical tweezers feature
+                            electronic and vibrational degrees of freedom which
+                            can be brought into interaction in a controllable
+                            way. Therefore, these systems enable the
+                            investigation of phenomena, similar to those studied
+                            in molecular physics, but on exaggerated length and
+                            time scales. We exploit these interactions to
+                            investigate the possibility of building a quantum
+                            simulation framework for molecular systems. In our
+                            framework, we find that beyond certain coupling
+                            strengths, the vibrational motion becomes unstable,
+                            and we derive the critical values. Moreover, we
+                            derive quantum corrections to the ground state
+                            energy of a micrometer-sized diatomic and triangular
+                            atom array, which are not captured by the
+                            Born-Oppenheimer approximation. We investigate the
+                            physical implications of these corrections and find
+                            that they are linked to phonon-squeezed states. We
+                            further establish their impact on a regime where the
+                            triangular array is in a superposition of distorted
+                            triangular shapes (Jahn-Teller regime). Finally, we
+                            propose a protocol to prepare molecular states whose
+                            structure is strongly affected by electron-phonon
+                            coupling. Our results show that trapped Rydberg atom
+                            arrays indeed offer a versatile platform for the
+                            study of quantum phenomena that link to molecular
+                            physics.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="">
+                                PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SESP -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images.d/image_SESP.png"
+                         alt="Typical output of a matrix printed with SESP."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            Publication
+                        </b>
+                        <p>
+                            <i>
+                                Rydberg atom arrays as quantum simulators for
+                                molecular dynamics
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            <i>Abstract.</i>
+                            <br>
+                            <br>
+                            Rydberg atoms held in optical tweezer arrays combine
+                            vibrational and electronic degrees of freedom that
+                            can be coupled and manipulated at a microscopic
+                            level. This opens opportunities for the quantum
+                            simulation of artificial molecular systems and
+                            offers in particular a platform for probing complex
+                            vibronic dynamics in controlled settings with
+                            increasing complexity. Tailored interatomic
+                            interactions and electron-phonon couplings yield
+                            handles for designing electronic state manifolds,
+                            for studying structural transitions, and for
+                            exploring non-classical vibrational states near
+                            molecular instabilities. Furthermore, this quantum
+                            simulator opens opportunities for testing and
+                            quantifying the validity of fundamental concepts,
+                            such as the Born-Oppenheimer approximation and
+                            quantum corrections to it.
+                        </p>
+                        <div class="sans">
+                            <hr>
+                            <b>Reference:</b>
+                            <a href="https://journals.aps.org/prresearch/abstrac
+t/10.1103/r54t-myhc">
+                                Phys. Rev. Research <b>7</b>, L042009
+                            </a>
+                            <br>
+                            <b>Preprint:</b>
+                            <a href="https://arxiv.org/abs/2506.09865">
+                                arXiv <b>[quant-ph]</b>, 2506.90865v1 (2025)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside_" class="secondary"></aside>
+
+        <!-- FOOTER -->
+        <footer id="footer_" class="primary"></footer>
+
+    </body>
+
+</html>
+<!--- END -->
