@@ -60,6 +60,25 @@
                     planned on existing ones.
                 </p>
 
+                <!-- PLANNED WORK -->
+                <div class="important">
+                    <h4 class="sans">
+                        Planned work
+                    </h4>
+                    <ul>
+                        <li>
+                            I will finish the physics-section on my GitHub
+                            pages.
+                        </li>
+                        <br>
+                        <li>
+                            I will add an electro-dynamics page on this webpage,
+                            presenting some of my private projects.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
                 <!-- CALENDAR -->
                 <div class="secondary GitHubRepository">
                     <img src="../images.d/image_calendar.png"
@@ -91,13 +110,14 @@
                             there is no more functionality.
                         </p>
                         <p>
-                            The calendar is completely written in C using GTK-4.
-                            There is no binary distribution of the software. The
-                            application should be build by the user dircetly.
-                            This allows maximal control and a very simple and
-                            direct way of customising the the calendar&rsquo;s
-                            appearance through a single C source file. No weird
-                            configuration file formats and alike.
+                            The calendar is completely written in C using the
+                            GTK-4 headers. There is no binary distribution of
+                            the software. The application should be build by
+                            the user dircetly. This allows maximal control and
+                            a very simple and direct way of customising the the
+                            calendar&rsquo;s appearance through a single C
+                            source file. No weird configuration file formats
+                            and alike.
                         </p>
                         <div class="sans GitHubRepositoryDownload">
                             <hr>
@@ -127,8 +147,8 @@ eleases">
                         <hr>
                         <p>
                             While working on my master&rsquo;s thesis it became
-                            clear to me that for the &lsquo;quick-and-dirty
-                            (basic)&rsquo; simulations I run on a daily basis I
+                            clear to me, that for the &lsquo;quick-and-dirty
+                            (basic)&rsquo; simulations I run on a daily basis, I
                             always need the same numerical quantities. Therefore
                             I descided to write a small software library to
                             avoid writing the same computer code over and over.
@@ -137,10 +157,9 @@ eleases">
                             To implement this library I decided to use the
                             scripting language Python, since it offers an easy
                             to use interface to well-tested and fast FORTRAN,
-                            etc. code. I definitly took concepts from
-                            <a href="https://qutip.org">
-                                QuTiP
-                            </a>, which I hereby reference.
+                            etc., code. I definitly took concepts from
+                            <a href="https://qutip.org">QuTiP</a>, which I
+                            hereby reference.
                         </p>
                         <div class="sans GitHubRepositoryDownload">
                             <hr>
@@ -163,9 +182,12 @@ eleases">
                         <p>
                             <i>
                                 A simple sparse and dense matrix library in
-                                native C. The abbreviation SESP is short for
-                                <b>Simon Euchner&rsquo;s sparse matrix
-                                library</b> to avoid ambiguity with other sparse
+                                native C.
+                                <br>
+                                <br>
+                                The abbreviation SESP is short for <b>Simon
+                                Euchner&rsquo;s sparse matrix library</b>, named
+                                this way to avoid ambiguity with other sparse
                                 matrix libraries.
                             </i>
                         </p>
@@ -174,10 +196,9 @@ eleases">
                             I was frustrated that using sparse matrices in C is
                             somehwat convoluted, because one typically needs to
                             install huge packages of software, e.g.,
-                            <a href="https://sparse.tamu.edu/">
-                                <em>SuiteSparse</em>
-                            </a>, which come with rather thin or no
-                            documentation. In order to not install a lot of
+                            <a href="https://sparse.tamu.edu/"><em>
+                            SuiteSparse</em></a>, which come with rather thin or
+                            no documentation. In order to not install a lot of
                             software I do not need, just to obtain a basic
                             sparse matrix library, I descided to code one up
                             myself. The result is the present software.
@@ -186,14 +207,12 @@ eleases">
                             The library is mainly designed for useage directly
                             in a C program, although I remark it is
                             straight-forward to code up a
-                            <a href="https://www.python.org/">
-                                <em>Python</em>
-                            </a>,
-                            <a href="https://julialang.org/">
-                                <em>Julia</em>
-                            </a>, etc., interface. Of course, high-level
-                            languages, typically, already come with a sparse
-                            matrix library, such that I definitely view the main
+                            <a href="https://www.python.org/"><em>
+                            Python</em></a>,
+                            <a href="https://julialang.org/"><em>Julia</em></a>,
+                            etc., interface. Of course, high-level languages,
+                            typically, already come with a sparse matrix
+                            library, such that I definitely view the main
                             application area of the library to be directly in C.
                         </p>
                         <p>
@@ -229,8 +248,8 @@ ses">
                         <hr>
                         <p>
                             I wanted a C library that allows me to work
-                            with linked lists, so I coded one up, and the present
-                            library is the result.
+                            with linked lists, so I coded one up, and the
+                            present library is the result.
                         </p>
                         <p>
                             It is simple, written in native C, and can be
@@ -272,14 +291,15 @@ ases/">
                             <a href="https://wayland.freedesktop.org/">
                                 <em>Wayland Protocol</em>
                             </a>
-                            I was curious on how one writes Wayland clients.
-                            Therefore, in order to learn some basics, I coded up
-                            this simple example client.
+                            I was curious how the protocol and its
+                            implementation works. Therefore, in order to learn
+                            some basics, I coded up this simple example Wayland
+                            client.
                         </p>
                         <p>
-                            The program is <em>only</em> intended for
-                            educational purposes and should <em>not</em> be used
-                            in real-world applications.
+                            The program is intended for educational purposes
+                            <em>only</em> and should <em>not</em> be used in
+                            real-world applications.
                         </p>
                         <hr>
                         <div class="sans GitHubRepositoryDownload">
@@ -317,10 +337,10 @@ entLogo">
                         <p>
                             One of the ordinary-differential equation solvers I
                             typically use is the one stated above. However, I
-                            wanted the opportunity to call it from within a C
+                            wanted the freedom to call it from within a C
                             program. Therefore I decided to write a simple C
-                            interface to the original FORTRAN code, such that I
-                            do not need to do it every time I need the
+                            interface to the original FORTRAN source code, such
+                            that I do not need to do it every time I need the
                             integrator.
                         </p>
                         <p>
@@ -337,15 +357,6 @@ ases/">
                         </div>
                     </div>
                 </div>
-
-                <!-- PLANNED WORK -->
-                <h4 class="sans">
-                    Planned work
-                </h4>
-                <p>
-                    I will finish the section <em>Physics</em> on my GitHub
-                    pages.
-                </p>
 
             </div>
 
