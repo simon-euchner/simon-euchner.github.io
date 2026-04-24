@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    MAIN SOURCE FILE OF WEBSITE
+
+    AUTHOR OF THIS FILE: SIMON EUCHNER
+-->
+
+<!-- HTML -->
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image" href="./images/image_favicon.png">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./js/load_sources.js"></script> <!-- NO DEFER -->
+        <script src="./js/button_actions.js" defer></script>
+        <title>
+            GitHub pages
+        </title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- LOAD EXTERNAL HTML SOURCES -->
+        <script>
+            loadHtmlSource("./html/aside_.html", "aside_");
+            loadHtmlSource("./html/footer_.html", "footer_");
+        </script>
+
+        <!-- HEADER -->
+        <header class="center sans primary">
+            <h2>
+                GitHub pages of Simon Euchner
+            </h2>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="secondary">
+            <button class="sans primary flexGrow"
+                    onclick="refreshPage()">
+                Home
+            </button>
+            <button class="sans primary flexGrow"
+                    onclick="switchPage('./html/github.html')">
+                GitHub
+            </button>
+            <button class="sans primary flexGrow"
+                    onclick="switchPage('./html/physics.html')">
+                Physics
+            </button>
+            <button class="sans primary flexGrow"
+                    onclick="switchPage('./html/contact.html')">
+                Contact
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <h3 class="center sans">
+                Welcome to my portfolio
+            </h3>
+            <div class="pageMargin">
+                <h4 class="sans">
+                    About this website
+                </h4>
+                <p>
+                    On this website, I present my work across several fields,
+                    including GitHub repositories, ongoing and planned
+                    personal projects, and scientific research in theoretical
+                    physics.
+                </p>
+                <h4 class="sans">
+                    Areas of interest
+                </h4>
+                <p>
+                    My primary interests lie in theoretical atomic physics,
+                    (analog) quantum simulation of molecular processes using
+                    Rydberg atoms and ions, electronics, electrodynamics, and
+                    and classical mechanics. I am also passionate about computer
+                    programming, particularly in C and FORTRAN. I advocate for
+                    minimalist, open-source software that provides users with
+                    transparency and full control.
+                </p>
+                <h4 class="sans">
+                    Software philosophy
+                </h4>
+                <p>
+                    In my personal projects, I focus on building streamlined
+                    applications that avoid unnecessary overhead. My philosophy
+                    is &lsquo;hands-on&rsquo;, prioritising performance, maximal
+                    control, and minimal third-party dependencies over abstract
+                    user-friendliness. This approach ensures that the core
+                    functionality remains accessible and efficient.
+                </p>
+            </div>
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside_" class="secondary"></aside>
+
+        <!-- FOOTER -->
+        <footer id="footer_" class="primary"></footer>
+
+    </body>
+
+</html>
+<!--- END -->

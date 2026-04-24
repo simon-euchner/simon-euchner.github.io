@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="image_favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.24264335"
+     inkscape:cx="329.70201"
+     inkscape:cy="989.10603"
+     inkscape:window-width="1362"
+     inkscape:window-height="734"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1"
+       transform="matrix(1.2280207,0,0,1.2280207,31.101086,26.503339)"
+       inkscape:export-filename="../image_favicon.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400">
+      <circle
+         style="opacity:1;fill:#0000c8;fill-opacity:1;stroke:#0000c8;stroke-width:0.349999;stroke-linecap:round;stroke-opacity:1;paint-order:stroke fill markers"
+         id="path1"
+         cx="91.411575"
+         cy="68.241104"
+         r="22.04854" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:24.6944px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#c86400;fill-opacity:1;stroke:none;stroke-width:0.349999;stroke-linecap:round;paint-order:stroke fill markers"
+         x="91.26342"
+         y="75.439522"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="fill:#c86400;fill-opacity:1;stroke:none;stroke-width:0.35"
+           x="91.26342"
+           y="75.439522">SE</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+    CONTACT INFORMATION
+
+    AUTHOR OF THIS FILE: SIMON EUCHNER
+-->
+
+<!-- HTML -->
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image" href="../images/image_favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../js/load_sources.js"></script> <!-- NO DEFER -->
+        <script src="../js/button_actions.js" defer></script>
+        <title>
+            Contact
+        </title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- LOAD EXTERNAL HTML SOURCES -->
+        <script>
+            loadHtmlSource("./aside_.html", "aside_");
+            loadHtmlSource("./footer_.html", "footer_");
+        </script>
+
+        <!-- HEADER -->
+        <header class="center sans primary">
+            <h2>
+                Contact
+            </h2>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="secondary">
+            <button class="sans primary homeButton"
+                    onclick="switchPage('../index.html')">
+                Home
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="pageMargin">
+                <h4 class="sans">
+                    Contact and collaboration
+                </h4>
+                <p>
+                    Should you have any enquiries, suggestions, or wish to
+                    discuss any aspect of my work, please do not hesitate to
+                    contact me via electronic mail. This invitation extends to
+                    requests for permissions regarding the use of content found
+                    on this website or within my various projects that may fall
+                    outside the scope of the applied
+                    <a href="../LICENSE.txt"><em>licence</em></a>. For
+                    instance, if you are interested in utilising portions of my
+                    codebase within proprietary software, I am confident that a
+                    mutually agreeable solution can be reached.
+                </p>
+
+                <!-- CONTACT -->
+                <div class="contact">
+
+                    <img src="../images/image_portrait.png"
+                         alt="Simon Euchner portrait."
+                         class="contactImage">
+
+                    <div class="contactAddress">
+                        <h4 class="sans">
+                            Contact Details
+                        </h4>
+                        <em>Simon Euchner</em>
+                        <br>
+                        <b><tt>euchner.se[at]gmail.com</tt></b>
+                        <br>
+                        <em>Germany</em>
+                    </div>
+
+                </div>
+
+                <div class="important">
+                    <h4 class="sans">
+                        Legal Notice
+                    </h4>
+                    <p>
+                        Any use, reproduction, or distribution of the above
+                        image without my explicit written authorisation is a
+                        violation of applicable copyright law and <em>will be
+                        subject to legal action</em>.
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside_" class="secondary"></aside>
+
+        <!-- FOOTER -->
+        <footer id="footer_" class="primary"></footer>
+
+    </body>
+
+</html>
+<!--- END -->

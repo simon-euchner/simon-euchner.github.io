@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--
+    GITHUB REPOSITORIES
+
+    AUTHOR OF THIS FILE: SIMON EUCHNER
+-->
+
+<!-- HTML -->
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image" href="../images/image_favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../js/load_sources.js"></script> <!-- NO DEFER -->
+        <script src="../js/button_actions.js" defer></script>
+        <title>
+            GitHub repositories
+        </title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- LOAD EXTERNAL HTML SOURCES -->
+        <script>
+            loadHtmlSource("./aside_.html", "aside_");
+            loadHtmlSource("./footer_.html", "footer_");
+        </script>
+
+        <!-- HEADER -->
+        <header class="center sans primary">
+            <h2>
+                GitHub
+            </h2>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="secondary">
+            <button class="sans primary homeButton"
+                    onclick="switchPage('../index.html')">
+                Home
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="pageMargin">
+
+                <!-- Introduction -->
+                <h4 class="sans">
+                    Introduction
+                </h4>
+                <p>
+                    Here, I provide a comprehensive overview of my projects
+                    hosted on GitHub. For each repository, I have summarised
+                    the primary purpose and core features in a concise manner.
+                    Furthermore, I use this space to announce plans for future
+                    projects and upcoming updates to existing ones.
+                </p>
+
+                <!-- PLANNED WORK -->
+                <div class="important">
+                    <h4 class="sans">
+                        Planned work
+                    </h4>
+                    <ul>
+                        <li>
+                            I will complete the physics section of my GitHub
+                            pages in the near future.
+                        </li>
+                        <br>
+                        <li>
+                            I intend to add an electrodynamics section to this
+                            website, presenting several of my private projects.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- CALENDAR -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_calendar.png"
+                         alt="Image of the main view of the program calendar."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            calendar
+                        </b>
+                        <p>
+                            <i>
+                                A simple GTK-4 calendar, inspired by a classic
+                                paper-based approach
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            Modern digital calendars often come with an
+                            overwhelming plethora of features. Whilst this is
+                            undoubtedly beneficial for many, I personally find
+                            software with unnecessary complexity rather
+                            distracting. Consequently, I decided to develop a
+                            minimalist GTK-4 calendar that replicates the core
+                            utility of a traditional paper calendar: it allows
+                            one to append text-based notes (in monospace) to
+                            specific days and mark them accordingly. Beyond a
+                            general notes window and highlighting the current
+                            date, the programme remains intentionally simple.
+                        </p>
+                        <p>
+                            The calendar is written entirely in C utilising the
+                            GTK-4 headers. No binary distribution is provided;
+                            instead, the application should be built by the
+                            user directly. This ensures maximal control and
+                            allows for straightforward customisation of the
+                            calendar&rsquo;s appearance through a single C
+                            source file, bypassing the need for convoluted
+                            configuration file formats.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="https://github.com/simon-euchner/calendar/r
+eleases/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ALKCALC -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_AlkCalc.png"
+                         alt="Sketch of an electron interacting with a nucleus."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            AlkCalc
+                        </b>
+                        <p>
+                            <i>
+                                Alkali-metal atom and alkaline-earth-metal ion
+                                calculator
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            The AlkCalc library is a suite of streamlined
+                            programmes, written in C and FORTRAN, designed to
+                            numerically compute single-electron bound states of
+                            alkali-metal atoms and alkaline-earth-metal ions
+                            through a parametric model potential. Comprehensive
+                            details, documentation, and a README are available
+                            in English on GitHub; however, the README is also
+                            available in German.
+                        </p>
+                        <p>
+                            The software comprises two distinct components: the
+                            first is dedicated to data generation, specifically
+                            the numerical computation of radial eigenstates and
+                            their associated eigenenergies. This data is
+                            subsequently utilised by the second part, which
+                            provides a functional interface. This interface
+                            allows for the efficient extraction of
+                            eigenenergies, eigenstates, radial matrix elements,
+                            etc., from the generated datasets.
+                        </p>
+                        <p>
+                            AlkCalc follows a &lsquol;hands-on&rsquo;
+                            philosophy, as it is structured simply enough to
+                            allow for direct interaction with the source code.
+                            Developed in C99, the library is virtually
+                            platform-independent. Furthermore, as high-level
+                            languages typically offer convenient protocols for
+                            calling C code (such as Ctypes or Cython for
+                            Python), developing an interface for languages like
+                            Python, Julia, or MATLAB is straightforward. Thus,
+                            AlkCalc serves both as a standalone tool and as a
+                            foundation for high-level software development.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="https://github.com/simon-euchner/AlkCalc/re
+leases/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PYQUANT -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_pyquant.png"
+                         alt="A two-level system coupled to a bosonic mode."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            pyquant
+                        </b>
+                        <p>
+                            <i>
+                                A Python library for the classical simulation of
+                                quantum mechanical problems
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            Whilst researching for my Master&rsqou;s thesis, it
+                            became apparent that my daily simulations frequently
+                            required the same numerical quantities. To avoid the
+                            redundancy of rewriting the same code repeatedly, I
+                            decided to develop a small software library to
+                            optimise my workflow.
+                        </p>
+                        <p>
+                            I implemented this library using Python, as it
+                            offers a convenient interface to highly optimised
+                            and well-tested FORTRAN routines. I have
+                            incorporated several concepts from
+                            <a href="https://qutip.org" target="_blank"
+                               rel="noopener noreferrer">QuTiP</a>, which I
+                            gratefully acknowledge here.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="https://github.com/simon-euchner/pyquant/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COULOMBCRYSTAL -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_CoulombCrystal.png"
+                         alt="A three-particle Coulomb crystal."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            CoulombCrystal
+                        </b>
+                        <p>
+                            <i>
+                                A Python library to work with Coulomb crystals
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            This project is a Python package designed for
+                            studying so-called <em>Coulomb crystals</em> &mdash;
+                            a type of crystal that forms when charged particles
+                            are trapped in an attractive potential. The software
+                            enables the calculation of equilibrium positions and
+                            the displacement signatures of collective
+                            vibrational modes of such crystals. Furthermore, the
+                            package provides tools to visualise the crystal,
+                            offering intuitive insights into this exotic phase
+                            of matter.
+                        </p>
+                        <p>
+                            The package also includes a specialised Python
+                            class tailored for cold trapped-ion Coulomb
+                            crystals, which are commonly studied in Paul and
+                            Penning traps.
+                        </p>
+                        <div class="sans GitHubRepositoryDownload">
+                            <hr>
+                            <a href="https://github.com/simon-euchner/CoulombCry
+stal/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SESP -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_SESP.png"
+                         alt="Typical output of a matrix printed with SESP."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            SESP
+                        </b>
+                        <p>
+                            <i>
+                                A simple sparse and dense matrix library in
+                                native C
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            I found the process of utilising sparse matrices in
+                            C to be somewhat convoluted, often requiring the
+                            installation of very large software packages, such
+                            as <a href="https://sparse.tamu.edu/"
+                                  target="_blank" rel="noopener noreferrer"><em>
+                            SuiteSparse</em></a>, which frequently suffer from
+                            rather minimal documentation. Therefore, I decided
+                            to implement a lightweight sparse matrix library
+                            myself.
+                        </p>
+                        <p>
+                            The library is primarily designed for direct
+                            integration into C programmes, although it can be
+                            easily interfaced with high-level languages like
+                            Python or Julia. By focusing on a minimalist design
+                            and core functionality, I have ensured that
+                            additional features can be integrated
+                            straightforwardly as required.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/SESP/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LLIST -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_llist.png"
+                         alt="An image depicting the idea of a linked list."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            llist
+                        </b>
+                        <p>
+                            <i>
+                                A C library to work with linked lists
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            I required a native C library that would allow me to
+                            manipulate linked lists efficiently, which led me to
+                            develop this project.
+                        </p>
+                        <p>
+                            The library is simple, written in native C, and can
+                            be seamlessly included in any C programme via a
+                            single header file.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/llist/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WAYLANDCLIENTLOGO -->
+                <div class="secondary GitHubRepository">
+                    <img src="../images/image_waylandclientlogo.png"
+                         alt="Image of the Wayland logo."
+                         class="GitHubRepositoryImage">
+                    <div style="grid-area: txt">
+                        <b class="sans GitHubRepositoryTitle">
+                            WaylandClientLogo
+                        </b>
+                        <p>
+                            <i>
+                                Educational implementation of a Wayland client
+                            </i>
+                        </p>
+                        <hr>
+                        <p>
+                            When I first migrated my systems from the
+                            <a href="https://x.org/releases/X11R7.7/doc/xproto/x
+11protocol.html"
+                               target="_blank" rel="noopener noreferrer">
+                                <em>X Window System Protocol</em>
+                            </a>
+                            to the
+                            <a href="https://wayland.freedesktop.org/"
+                               target="_blank" rel="noopener noreferrer">
+                                <em>Wayland Protocol</em>
+                            </a>
+                            I was curious to explore the underlying mechanisms
+                            of the protocol. To facilitate this learning
+                            process, I developed this simple example Wayland
+                            client.
+                        </p>
+                        <p>
+                            This programme is intended solely for educational
+                            purposes and should not be utilised in real-world
+                            applications.
+                        </p>
+                        <hr>
+                        <div class="sans GitHubRepositoryDownload">
+                            <a href="https://github.com/simon-euchner/WaylandCli
+entLogo/"
+                               target="_blank" rel="noopener noreferrer">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside_" class="secondary"></aside>
+
+        <!-- FOOTER -->
+        <footer id="footer_" class="primary"></footer>
+
+    </body>
+
+</html>
+<!--- END -->
